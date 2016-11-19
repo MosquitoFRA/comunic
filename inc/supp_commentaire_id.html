@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Suppression de commentaire</title>
+	</head>
+	<body>
+		<form action="../action.php" method="get">
+			<table border='1' align='center'>
+				<tr>
+					<td> ID du texte </td>
+					<td> <input type="text" name="idtexte" /> </td>
+				</tr>
+				<tr>
+					<td> ID du commentaire </td>
+					<td> <input type="text" name="idcommentaire" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center"> <input type="submit" value="Supprimer" /> </td>
+			</table>
+			
+			<!-- Info pour action.php -->
+			<input type="hidden" name="actionid" value="15" />
+		</form>
+	</body>
+</html>

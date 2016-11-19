@@ -1,0 +1,12 @@
+/* Feuille de styles pour l'acceuil des outils pour Comunic */
+
+.tools_container {
+	margin: auto;
+	margin-top: 20px;
+	width: 385px;
+	text-align: justify;
+}
+
+.tools_container .button {
+	width: 385px;
+}

@@ -1,0 +1,32 @@
+/* Notification system of Comunic
+	(c)	Comunic 2013 - 2015      	  */
+	
+.notifications_contener a {
+	text-decoration: none;
+}
+.notifications_contener div {
+	margin-top: 2px;
+	min-height: 32px;
+}
+.notifications_contener div:hover {
+	background-color: rgba(0, 0, 255, 0.59);
+}
+
+.notifications_contener div:hover div {
+	border: 1px rgba(0, 0, 255, 0.59) solid;
+	margin: -2px;
+}
+
+.notifications_contener div:hover  a{
+	color: #FFFFFF;
+}
+
+.notifications_contener img {
+	float: left;
+}
+
+.notifications_contener .chargement {
+	margin: auto;
+	text-align: center;
+	top: 50px;
+}

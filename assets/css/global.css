@@ -1,0 +1,1479 @@
+/*! 
+	Pack d'images pour Comunic
+	
+	Copyright Comunic 2015-2015
+	
+	Tous droits de réutilisation réservés.
+*/
+/* Général */
+[class*="img-"] {
+    background: transparent url("../img/ensembles/ensemble_img1.png") no-repeat scroll 0% 0%;
+    overflow: hidden;
+}
+
+.img-add-account {
+	background-position: 0px 0px;
+    margin: 1px;
+    width: 31px;
+    height: 32px;
+}
+
+.img-search-accounts {
+	background-position: -31px 0px;
+    margin: 1px;
+    width: 32px;
+    height: 32px;
+}
+
+.img-comments {
+	background-position: -63px 0px;
+    margin: 1px;
+    width: 32px;
+    height: 32px;
+}
+
+.img-cadenas {
+	background-position: -96px 0px;
+    margin: 1px;
+	margin-left: 4px;
+	margin-right: 4px;
+    width: 24px;
+    height: 32px;
+}
+
+.img-private-chat {
+	background-position: -121px 0px;
+	margin: 1px;
+	width: 32px;
+	height: 32px;
+}
+
+.img-private-chat-small {
+	background-position: -63px 0px;
+	margin: 1px;
+	width: 16px;
+	height: 16px;
+	background-size: 33%;
+}
+
+/*! 
+	Librairie de style pour Comunic
+	
+	Copyright Comunic 2013-2015
+	
+	Tous droits de réutilisation réservés.
+*/
+/* Général, en-tête de la page */
+body {margin:0px;padding:0px;background:#ffffff;font-family:arial, helvetica, sans-serif;}
+#top {margin:0px;padding:0px;background:#0066CC; color: #FFFFFF; width:100%; }
+#top .container { padding:0px 0px 0px 0px; }
+/*----------------------------------------------------------------------------------------*/
+
+/* Nouvelle barre de menu */
+.new_navbar {
+	position: fixed;
+	z-index: 3;
+}
+
+@media screen and (max-width: 600px) {
+	.retour_page_user {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 251px) {
+	#titre_site_lettre {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	/*#button_private_chat {
+		display: none;
+	}
+	
+	#button_view_fil {
+		display: none;
+	}*/
+	
+	#titre_site_nom {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 422px) {
+	.recherche_menu {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 598px) {
+	.titre_site_without_login_big {
+		display: none !important;
+	}
+	
+	.titre_site_without_login_small {
+		display: inherit;
+	}
+}
+
+@media screen and (max-width: 512px) {
+	#loginuser {
+		display: none !important;
+	}
+	
+	.bouton_login_user {
+		display: inherit;
+	}
+}
+
+@media screen and (min-width: 513px) {
+	#loginuser {
+		display: inherit;
+	}
+	
+	.bouton_login_user {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 599px) {
+	.titre_site_without_login_big {
+		display: inherit;
+	}
+	
+	.titre_site_without_login_small {
+		display: none !important;
+	}
+}
+
+/* Aide à l'impression */
+@media print {
+  .new_navbar, .listeamis, .bottom, #new_notification, #private_chat_contener, hr, .correctifnouvbarre {
+    display: none !important;
+  }
+  
+  body {
+     width: 800px;
+    margin: auto;
+  }
+}
+
+
+/* Nouveau type de page*/
+.nouveau_corps_page {
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+	border: 1px grey solid;
+	padding: 2px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+/* Correctif: corrige le position:fixed de la barre en ajoutant une barre de menu invisible */
+.correctifnouvbarre { margin:0px;padding:0px;background:#0066CC; color: #FFFFFF; width:100%; height: 45px; }
+
+/* Correctif: curseur sur les boutons de la barre de menu */
+.button_moderne_menu{cursor: pointer;}
+
+/*Page de l'utilisateur*/
+/*.post{background-color:#0066FF;}*/
+
+/* Bouton de retour à la page principale */
+.retourpageprincipale {border: 1px black solid; margin: auto; }
+
+/* Commentaires */
+.commentaires{ font-size: 80%; }
+.tablecommentaire{
+	margin:auto;
+	/* background-color: rgba(0, 181, 252, 0.33); En bleu */
+	background-color: rgba(193, 195, 197, 0.5);
+}
+.tablecommentaire td{ text-align: left; }
+.add_comment input[type="text"]{
+	border: 1px rgba(128, 128, 128, 0.48) solid;
+	height: 32px;
+	vertical-align: middle;
+}
+
+/* Responsive */	
+@media screen and (min-width: 540px) {
+	.add_comment input[type="text"]{
+		min-width: 523px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.add_comment input[type="text"]{
+		min-width: 80px;
+	}
+}
+
+
+
+.add_comment input[type="button"]{
+	border: 1px rgba(128, 128, 128, 0.48) solid;
+	height: 32px;
+	vertical-align: middle;
+}
+
+.input_commentaire_image input {
+	visibility: hidden;
+	position: absolute;
+	margin-top: 23px;
+	width: 150px;
+	border: 1px black solid;
+	padding: 2px;
+	border-radius: 2px;
+	margin-left: -89px;
+	background-color: rgba(255, 255, 255, 0.39);
+}
+
+.input_commentaire_image:hover input {
+	background-color: #FFFFFF;
+	visibility: visible;
+}
+
+.commentaires img {
+	vertical-align: middle;
+}
+.commentaire span {
+	visibility: hidden;
+	position: absolute;
+}
+
+.commentaire:hover span {
+	visibility: visible;
+	position: relative;
+}
+
+/*--------------------------------*/
+
+.a {
+	color: blue;
+	cursor: pointer;
+}
+
+.a:active {
+	color: red;
+}
+
+/* Ajout de posts sur la page de l'utilisateur */
+/* Correctif : ajout de post */
+.ajout_post { 
+	width:412px;
+	margin:auto;
+	max-width: 100%;
+}
+#add_form_texte {
+	width: 65%;
+	margin: auto;
+}
+
+@media screen and (max-width: 512px){
+	#add_form_texte {
+		font-size: 70%;
+		width: 96% !important;
+		padding-top: 40px;
+	}
+	
+	#button_form_ajout_simple button {
+		/*margin-left: -149px;
+		width: 280px;*/
+	}
+	
+	#tab_add_a_pdf, #tab_add_a_movie {
+		display: none;
+	}
+	
+	/* Compteur à rebour */
+	.countdown {
+		font-size: 315% !important;
+	}
+}
+
+/* Niveau de visibilité du posts */
+.choix_niveau_visibilite { font-size: 70% !important; }
+.choix_niveau_visibilite ul  { display: inline-block !important; }
+.choix_niveau_visibilite li  { display: inline-block !important; }
+.choix_niveau_visibilite label  { display: inline-block !important; }
+.choix_niveau_visibilite label .label { position: absolute !important; visibility: hidden !important;}
+form:hover .choix_niveau_visibilite .label { position: relative !important; visibility: visible !important;}
+.choix_niveau_visibilite .img_change_groupes { width: 16px; vertical-align: middle; }
+
+.lientop {
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.lien:visited{
+color:blue;
+}
+
+#menu { background:#FFFFFF; }
+
+#titremenu { color: #FFFFFF; }
+.headercontenu {
+height: 200px;
+}
+
+/**
+ *	Link to personnal website
+ */
+.site_web 
+{
+	width: 90px;
+	margin-top: 55px;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.94);
+	border-radius: 2px;
+	z-index: 15;
+}
+
+.site_web img {
+	vertical-align: middle;
+}
+
+.site_web a, .site_web a:hover, .site_web a:visited {
+	color: blue;
+}
+
+.site_web a:active {
+	color: black;
+} 
+
+.contenupage {
+/*width: 1000px;*/
+border-left: 1px grey solid;
+border-bottom: 1px grey solid;
+border-right: 1px grey solid;
+margin: auto;
+background-repeat:no-repeat;
+text-align:center;
+}
+
+.td_left {
+}
+.td_left img{
+	vertical-align: middle;
+}
+
+/* Connexion */
+.panneau_gauche_connexion {
+	max-width: 250px;
+}
+
+/* Page principal d'un utilisateur non connecté */
+.home_contener div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.home_contener {
+  top: 0px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.page_acceuil_login {
+	background-color: rgba(27, 161, 226, 0.36);
+	color: #FFFFFF;
+}
+
+@media screen and (max-width: 512px){
+	.page_acceuil_login {
+		background-image: url("../img/acceuil/route_512x700_light.jpg");
+		background-repeat: no-repeat;
+		background-color: #BBC5C7 !important;
+		background-attachment: fixed;
+	}
+	
+	.page_acceuil_login .message_page_acceuil_login p {
+		text-align: center;
+		font-size: 190% !important;
+	}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 513px) {
+	.page_acceuil_login {
+		background-image: url("../img/acceuil/route_1280x1278_light.jpg");
+	}
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1281px) {
+	.page_acceuil_login {
+		background-image: url("../img/acceuil/route_1920x1080_light.jpg");
+	}
+}
+
+@media screen and (min-width: 1921px) {
+	.page_acceuil_login {
+		background-image: url("../img/acceuil/route_1920x1200_light.jpg");
+	}
+}
+
+.page_acceuil_login .bottom {
+	position: fixed;
+	bottom: 0px;
+	background-color: rgba(11, 10, 10, 0.51);
+}
+
+@media screen and (max-width: 598px) {
+	/* .page_acceuil_login */
+	.bottom {
+		position: relative !important;
+		top: 10px;
+		font-size: 130% !important;
+	}
+
+}
+
+.page_acceuil_login .bottom a, .page_acceuil_login .bottom a:active, .page_acceuil_login .bottom a:hover, .page_acceuil_login .bottom a:visited , .page_acceuil_login .bottom a:focus  {
+	color: #FFFFFF;
+}
+
+.page_acceuil_login .bottom a:active, .page_acceuil_login .bottom a:hover , .page_acceuil_login .bottom a:focus  {
+	text-decoration: underline;
+}
+
+.page_acceuil_login .command-button, .button_create_account  {
+	max-width: 493px !important;
+	width: 100% !important;
+}
+
+.page_acceuil_login .or {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 130%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+.page_acceuil_login table {
+	background-color: rgba(27, 161, 226, 0) !important;
+	margin-top: 10%;
+}
+
+.page_acceuil_login h3 {
+	color: #FFFFFF !important;
+}
+
+.message_page_acceuil_login {
+	text-align: left;
+	margin: auto;
+	width: 644px;
+	max-width: 100%;
+	/*background-image: url('../img/home_login_background.png');*/
+	background-repeat: no-repeat;
+}
+
+.message_page_acceuil_login p {
+	font-size: 300% !important;
+
+	font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif !important;
+	font-weight: 300 !important;
+	color: #FFFFFF !important;
+	letter-spacing: 0.00em !important;
+	font-size: 2.5rem !important;
+	line-height: 2.5rem !important;
+	letter-spacing: 0.01em !important;
+}
+
+.message_page_acceuil_login table {
+	font-size: 150% !important;
+	line-height: 2.5rem !important;
+	font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+.newaccount_page_acceuil_login {
+}
+
+.newaccount_page_acceuil_login  .form_element{
+	padding: 2px;
+	margin: auto;
+	width: 400px;
+	min-height: 27px;
+}
+
+.newaccount_page_acceuil_login  .form_element input{
+	float: right;
+}
+
+.newaccount_page_acceuil_login  .form_element table{
+	text-align: right;
+}
+
+/*Liste d'amis */
+.listeamis_light {
+	/*border-left: 1px black solid;
+	width: 25%;
+	max-width: 250px;
+	min-width: 50px;
+	background-color:#999;*/
+	position: fixed;
+	top: 45px;
+	/*left: auto;*/
+	right: 0px;
+	bottom :auto;
+	/*min-height: 50px;*/
+	/*height: 100%;*/
+	max-height: 90%;
+	overflow: auto;
+}
+
+@media screen and (max-width: 512px) {
+	.listeamis {
+		position: relative;
+		width: 100%;
+		max-width: 100%;
+		font-size: 100%;
+	}
+	
+	#fileAmis {
+		width: 100%;
+		max-width: 100% !important;
+	}
+	
+	.fermerpanneauami {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 513px) {
+	.panel-header-liste-amis {
+		display: none;
+	}
+	
+	.listeamis .panel-content {
+		padding: 0px !important;
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 513px)  {
+	.listeamis {
+		border-left: 1px black solid;
+		width: 25%;
+		max-width: 160px;
+		min-width: 50px;
+		background-color: rgba(255, 255, 255, 1.0);
+		position: fixed;
+		top: 45px;
+		left: auto;
+		right: 0px;
+		bottom :auto;
+		min-height: 50px;
+		height: 100%;
+		max-height: 95%;
+		overflow: auto;
+		font-size: 70%;
+		z-index: 2;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.listeamis {
+		border-left: 1px black solid;
+		width: 51px;
+		max-width: 250px;
+		min-width: 50px;
+		background-color: rgba(255, 255, 255, 0.58);
+		position: fixed;
+		top: 45px;
+		left: auto;
+		right: -15px;
+		bottom :auto;
+		min-height: 50px;
+		height: 100%;
+		max-height: 95%;
+		overflow: none;
+		font-size: 70%;
+		transition: width 1s;
+		z-index: 2;
+	}
+	
+	.listeamis:hover {
+		width: 250px;
+		right: 0px;
+		background-color: rgba(255, 255, 255, 1.0);
+		overflow: auto;
+		z-index: 4;
+	}
+	
+	#fileAmis{
+		width: 250px;
+	}
+	
+	.fermerpanneauami
+	{
+		display: none;
+	}
+	
+	.listeamis:hover .fermerpanneauami {
+		display: inherit;
+	}
+}
+
+.new_private_chat_friend_list {
+	cursor: pointer;
+}
+
+.invite_amis:hover {
+	background-color: white; 
+	opacity: 0.9;
+}
+
+.bouton_abonnement {
+	border: 1px black solid;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 4px;
+	color: rgba(0, 0, 255, 0.85);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 512px){
+	.bouton_abonnement {
+		font-size: 60%;
+	}
+}
+
+/* Réservé à la grande liste des amis */
+.grande_liste_amis td {
+	border-top: 1px grey solid;
+}
+
+.grande_liste_amis {
+	margin:auto;
+}
+
+.grande_liste_amis tr {
+	height: 40px;
+	width: 100%;
+	max-width: 250px;
+	min-width: 50px;
+}
+
+.nomlisteamis{
+	min-width: 40px;
+}
+
+#fileAmis {
+	max-height: 90%;
+	max-width: 200px;
+	overflow: auto;
+}
+
+#topAmis {
+	/* Nothing now */
+}
+
+.indicateur_connexion, .fast_chat_prive_img {
+	width: 16px;
+	height: 16px;
+	max-width: 16px !important;
+}
+
+/* Liste des amis */
+.fermerpanneauami{
+	position: relative;
+	margin: auto;
+	width: 61px;
+}
+
+/* Informations sur la page */
+/* Maintenant Responsive. */
+@media screen and (min-width: 513px){
+	.infopage {
+		float:right;
+		border-left: 1px grey solid;
+		border-bottom: 1px grey solid;
+		text-align:left;
+		max-width:400px;
+		min-width: 90px;
+		width: 25%;
+		height:200px;
+		overflow: auto;
+	}
+	.infopage:hover{
+		background-color: white;
+		opacity: 0.9;
+	}
+	
+	.element_infopage_short_label {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 512px){
+	.element_infopage_long_label {
+		display: none;
+	}
+	
+	.element_infopage {
+		display: inline-block;
+		font-size: 120%;
+		padding-right: 5px;
+	}
+}
+
+/* Pied de page */
+.bottom {
+width: 100%;
+margin: auto;
+background-repeat:no-repeat;
+text-align: center;
+font-size: 85%;
+}
+
+.metions_legales {
+	text-align: center;
+	color: black;
+	font-size: 70%;
+}
+/*--------------*/
+
+/* Envoi d'une image */
+.nouvimage {
+	width:300px;
+	height:100px;
+	border: 1px #03F solid;
+	margin:auto;
+	position:absolute;
+	opacity:0.9;
+	background-color: #FFFFFF;
+}
+.topnouvimage {
+	background-color:#03F;
+	color:#FFF;
+}
+.filenouvimage {
+height: 25px;
+width: 280px;
+}
+/*-----------------------------*/
+
+/* Affichage des images envoyées */
+.img_from_upload {
+	width: 100%;
+	/*height: 100%;*/
+	max-width: 640px;
+	/*max-height: 200px;*/
+}
+
+.aime
+{
+border-radius: 5px;
+text-align: center;
+background-color: #99FFFF;
+border: 1px #99CCFF solid;
+}
+
+.aime img {
+	vertical-align: middle;
+}
+
+.aime_contener {
+	font-size: 80%;
+}
+
+.aime_contener a:visited, .aime_contener a:active, .aime_contener a {
+	color: blue;
+	cursor: pointer;
+}
+
+.aimepage:hover{
+	background-color: white; 
+	opacity: 0.9;
+}
+
+.aimepage {
+	text-align: left;
+	padding-left: 40px;
+}
+
+.first_tr {
+	height: 171px;
+}
+
+/* Titre des pages */
+
+@media screen and (max-width: 512px) {
+	.titre {
+		font-size: 290% !important;
+	}
+}
+
+.titre
+{
+	text-align: center;
+}
+/*--------------*/
+
+/* En-tête des informations de l'utilisateur connecté */
+.header_infos_user {
+	height:200px;
+}
+
+@media screen and (min-width: 1630px) {
+	.header_infos_user {
+		position: fixed;
+	}
+
+}
+
+.corpstextes {
+margin: auto;
+width: 65%;
+max-width: 700px;
+}
+
+.no_texte .titre_no_texte {
+	font-size: 110%;
+}
+
+.no_texte img{
+	float: left;
+}
+
+.no_texte p {
+	text-align: justify;
+}
+
+/* Ligne des textes qui sont bleues 
+.texte_bg_blue {
+	/* background-color: #09F; *//*
+	background-color: rgb(161, 217, 255);
+}*/
+
+/* Ligne des textes qui sont grises */ 
+.texte_bg_grey {
+	background-color: rgba(168, 168, 168, 0.27);
+}
+
+/* Sondage sur Comunic */
+.sondage {
+	border: 1px grey solid;
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 0.07);
+}
+
+.sondage  select {
+	width: 80% !important;
+}
+
+.question_sondage {
+	/*font-family: "Comic Sans MS", Arial;*/
+	font-size: 150%;
+}
+
+.reponse_sondage {
+	padding: 5px;
+	border-bottom: 1px grey solid;
+}
+
+.main_resultat_sondage_contener {
+	margin: auto;
+	width: 96%;
+	max-width: 460px;
+}
+
+.main_resultat_sondage_contener table {
+	margin: auto;
+	width: 100%;
+}
+
+.main_resultat_sondage_contener .span2, .main_resultat_sondage_contener .span4 {
+	margin: auto;
+}
+
+sondage_result { 
+font-size: 0%;
+visibility: hidden;
+}
+
+/* Page d'aide */
+.corpspageaide {
+	margin: auto;
+	text-align: left;
+	width: 30px;
+	width: 1000px;
+}
+
+.nb_results_help_search, .help_list_all_articles {
+	text-align: center;
+	font-size: 75%;
+}
+/*-------------*/
+
+/* Notification */
+#notification {
+	position: absolute;
+	left: 0px;
+	top: 23px;
+	width: 421px;
+	height: 198px;
+	text-align: center;
+	border: 1px black solid;
+	background-color: #FFFFFF;
+}
+
+.nb_unread_notification {
+	background-color: red;
+	border-radius: 3px;
+}
+
+@media screen and (min-width: 513px) {
+	#new_notification {
+		position: fixed;
+		left: 95px;
+		top: 45px;
+		width: 330px;
+		height: 400px;
+		text-align: center;
+		border: 3px solid #000;
+		background-color: #FFF;
+		z-index: 3;
+		visibility: hidden;
+	}
+	
+	#new_notification_close {
+		position: fixed;
+		top: 410px;
+		left: 230px;
+	}
+
+}
+
+@media screen and (max-width: 512px) {
+	#new_notification {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background-color: #FFF;
+		z-index: 3;
+		visibility: hidden;
+		padding: 1px;
+		overflow: auto;
+	}
+	
+	#new_notification_close {
+		position: relative;
+		margin: auto;
+		width: 61px;
+	}
+}
+
+
+#new_notification_refresh {
+	position: fixed;
+	left: 350px;
+}
+
+.new_iframenotification {
+border: medium none;
+height: 360px;
+width: 315px;
+overflow: auto;
+}
+
+/* Suppressiond des anciennes notifications */
+#delete_old_notifications {
+	border: none;
+	width: 334px;
+	height: 210px;
+}
+
+/* Chat privé */
+#chatprive {
+float: right;
+position: fixed;
+bottom: 1.2em;
+opacity:1.0;
+width: 22.5em;
+right: 0em;
+text-align: center;
+margin: 0em;
+padding: 0em;
+border: 1px solid black;
+height: 400px;
+background-color: #FFFFFF;
+}
+
+.iframeprivatechat {
+border: medium none;
+height: 400px;
+width: 358px;
+overflow: auto;
+}
+
+/* Notification et chat privé */
+.fermernotification{
+position: absolute; bottom: 5px; margin: auto; left: 40%;
+}
+
+.iframenotification {
+border: medium none;
+height: 170px;
+width: 415px;
+overflow: auto;
+}
+
+/* Page de partage */
+.editshare {
+text-align: center;
+width: 499px;
+margin: auto;
+}
+/*-----------------*/
+
+/* Liste des Smiley */
+.liste_smile {
+	/*padding: 5px;*/
+	width: 140px;
+}
+.un_smile_de_liste {
+	/*padding: 3px;*/
+}
+.un_smile_de_liste:hover {
+	border: 1px black solid;
+	border-radius: 2px;
+}
+
+.bouton_ajout_smiley {
+	/*position: absolute;
+	margin-left: -24px;
+	margin-top: 6px;*/
+	z-index: 1;
+}
+/*--------------*/
+
+/* Récupération du mot de passe */
+.acceuil_solve_password {
+	border: 1px solid #808080;
+	width: 450px;
+	position: relative;
+	top: 20px;
+	margin: auto;
+	text-align: center;
+	padding: 5px;
+}
+
+.acceuil_solve_password img {
+	vertical-align: -10px;
+}
+
+.info_user_solve_password {
+	margin: auto;
+	border: 1px solid #808080;
+}
+
+.questions_solve_password {
+	border: 1px solid #808080;
+	width: 450px;
+	position: relative;
+	top: 20px;
+	margin: auto;
+	text-align: left;
+	padding: 5px;
+}
+
+.questions_solve_password img {
+	float:  left;
+}
+/* -------------*/
+
+/* Panneau de paramètres général */
+.general_settings
+{
+	/*border: 1px rgba(0, 0, 0, 0.39) solid;
+	padding-left: 20px;
+	width: 650px;*/
+}
+
+.container-settings .grid .row {
+	max-width: 100%;
+}
+
+.container-settings {
+	width: 100%;
+	max-width: 1000px;
+}
+
+/* Modification de l'avatar dans les paramètres */
+.bouton_edit_image_parametres img {
+	vertical-align: middle;
+}
+
+/* Gestion des groupes de personnes dans les paramètres */
+.gestion_groupe_personnes img {
+	vertical-align: middle; 
+}
+
+/* Envoi de vidéos */
+.list_choix_video {
+	text-align: left;
+	max-height: 150px;
+	overflow: auto;
+	border: 1px grey solid;
+	border-radius: 2px;
+}
+
+/* Changement du niveau de visibilité */
+.change_niveau_visibilite img:hover {
+	background-color: #D9D9D9;
+}
+
+.change_niveau_visibilite img:active {
+	background-color: black;
+}
+
+.change_niveau_visibilite {
+	position: absolute;
+	margin-top: 17px;
+	width: 22px;
+	margin-left: -17px;
+	text-align: center;
+	border: 1px black solid;
+	padding: 2px;
+	height: 80px;
+	background-color: #FFFFFF;
+}
+
+/* Affichage des vidéos sur les textes */
+.video_contener {
+	margin: auto;
+	width: 640px;
+}
+
+@media screen and (max-width: 512px) {
+	.video_contener {
+		display: none;
+	}
+}
+
+/* Recherche AJAX */
+#result_search {
+	border: 1px solid #000;
+	position: fixed;
+	top: 15px;
+	width: 300px;
+	left: 150px;
+	position: fixed;
+	top: 45px;
+	width: 300px;
+	left: 150px;
+	overflow: auto;
+	height: 350px;
+	visibility: visible;
+	z-index: 15;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	color: black
+}
+
+#result_search div {
+	padding: 2px;
+}
+
+#result_search div img {
+	vertical-align: middle;
+}
+
+#result_search div:hover {
+	background-color: rgba(38, 110, 236, 1);
+    color: #FFFFFF;
+}
+
+#list_results {
+	position: fixed;
+	visibility: hidden
+}
+
+/* Envoi d'un nouvel avatar à partir de la webcam */
+.corps_page_nouvel_avatar {
+	width: 700px;
+	margin: auto;
+	border: 1px grey solid;
+	padding: 2px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.corps_page_nouvel_avatar #contener {
+	text-align: center;
+}
+
+.target_image_webcam_nouvel_avatar {
+	margin: auto;
+	width: 480px;
+}
+
+.bouton_photo_webcam, .bouton_envoi_nouvel_avatar_from_webcam {
+	margin: auto;
+	width: 150px;
+}
+
+.bouton_photo_webcam button, .bouton_envoi_nouvel_avatar_from_webcam button {
+	background-color: rgba(0, 93, 255, 0.68);
+	border: 1px blue solid;
+	color: #FFFFFF;
+	border-radius: 2px;
+	height: 30px;
+	width: 150px;
+}
+
+.bouton_photo_webcam button:hover, .bouton_envoi_nouvel_avatar_from_webcam button:hover {
+	background-color: rgba(0, 93, 255, 0.48);
+}
+
+.bouton_photo_webcam button:active, .bouton_envoi_nouvel_avatar_from_webcam button:active {
+	background-color: rgba(0, 93, 255, 0.98);
+}
+
+/* Export des données personnelles */
+.export_donnee_table td{
+	border: 1px black solid;
+}
+
+.export_donnee_table tr:hover {
+	background-color: rgba(128, 128, 128, 0.4);
+}
+
+.export_donnee_table img {
+	vertical-align: middle;
+}
+
+/* Création de compte */
+#new_account body {
+	background-color: rgba(27, 161, 226, 0.64);
+	color: #FFFFFF;
+}
+#new_account body h2 {
+	color: #FFFFFF !important;
+}
+
+.account_created {
+	background-color: rgba(27, 161, 226) !important;
+	color: #FFF !important;
+	margin-top: -10px;
+}
+.account_created h1, .account_created p, .account_created h2 {
+	color: #FFF !important;
+}
+	
+.account_created .img_account_created_contener {
+	margin: auto;
+	width: 1311px;
+	max-width: 100%;
+}
+	
+.account_created .form_first_login {
+	margin: auto !important;
+	width: 500px;
+	text-align: center;
+}
+
+/* Informations sur les cookies */
+.info_cookies {
+	position: fixed;
+	bottom: -10px;
+	width: 350px;
+}
+
+/* Page A propos */
+#about body {
+	background-color: rgba(27, 161, 226, 0.36);
+	color: #FFFFFF;
+}
+
+#about .titre, #about h2 {
+	color: #FFFFFF !important;
+}
+
+#about .text_content {
+  font-size: 85%;
+}
+	
+#about .logo_contener {
+	width: 160px;
+	height: inherit;
+	padding: 5px;
+	float: left;
+	vertical-align: middle;
+}
+	
+#about .contener_main {
+	margin: auto;
+	font-size: 165%;
+	width: 650px;
+	height: 160px;
+}
+	
+#about .contener_infos {
+	width: 650px;
+	margin: auto;
+}
+	
+#about .big_link a img {
+	vertical-align: middle;
+}
+	
+#about .big_link a {
+	font-size: 125%;
+	color: #FFFFFF;
+}
+
+#about .big_link a:hover {
+	color: rgba(45, 173, 237, 0.8);
+}
+
+#about .big_link a:focus,
+#about .big_link a:active {
+	color: rgba(45, 173, 237, 0.6);
+}
+
+/* Conditions d'utilisation */
+.cgu {
+	padding: 5px;
+	text-align: justify;
+}
+
+.cgu .article_cgu {
+	text-decoration: underline;
+}
+
+/* Compteurs à rebours */
+timers { 
+	position: absolute;
+	visibility: hidden;
+}
+
+/* Page de prise de contact */
+.one_contact {
+	width: 650px;
+	margin: auto;
+}
+
+.form_contact
+{
+	margin-top: 20px !important;
+}
+
+/* Résolution des problèmes d'affichage */
+#alerte_compatible {
+	top: 40%;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	text-align: center;
+}
+
+/* Lien vers une page web */
+.link_webpage {
+	background-color: #93B4F8;
+	border-radius: 2px;
+	border: 1px black solid;
+	width: 500px;
+	margin: auto;
+	min-height: 42px;
+	text-align: left;
+	color: black;
+}
+
+@media screen and (max-width: 512px) {
+	.link_webpage {
+		width: 200px !important;
+	}
+}
+
+.link_webpage a {
+	color: black;
+}
+
+.link_webpage .image_webpage {
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	height: 32px;
+}
+
+.link_webpage .url_webpage {
+	font-size: 80%;
+}
+
+.link_webpage .url_webpage:visited, .link_webpage .url_webpage:hover,.link_webpage .url_webpage {
+	color: blue;
+}
+
+.link_webpage .url_webpage:active {
+	color: black
+}
+
+.link_webpage .titre_webpage {
+	font-size: 120%;
+	margin-bottom: 2px;
+}
+
+.link_webpage .description_webpage {
+	font-size: 90%;
+	padding: 2px;
+	text-align: justify;
+}
+/* Fin de lien vers une page web */
+
+/* Page de liste d'amis */
+.page_liste_amis {
+	top: 5px;
+}
+
+.page_liste_amis div{
+	color: blue;
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+.page_liste_amis div:hover{
+
+	text-decoration: underline;
+}
+
+.page_liste_amis div img{
+	vertical-align: middle;
+
+}
+/* Fin de page de liste d'amis */
+
+
+/* Lien vers un PDF */
+.link_pdf, .link_pdf:visited {
+	padding: 2px;
+	border: 1px grey solid;
+	border-radius: 2px;
+	color: blue;
+	width: 130px;
+	margin: auto;
+}
+
+.link_pdf img {
+	vertical-align: middle;
+}
+/* Fin de: Lien vers un PDF */
+
+
+/* Page de découverte de Comunic */
+.what_is_comunic_page {
+	padding: 10px;
+}
+
+.container_cgu {
+	width: 750px;
+	max-width: 96%;
+	margin: auto;
+}

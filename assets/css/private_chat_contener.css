@@ -1,0 +1,93 @@
+/*  Fichier de gestion du chat privé sur toute les pages
+	Service Pierre 2015				Tous droits réservés */
+	
+/* Bouton d'ouverture du chat */
+#private_chat_open_button {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	z-index: 3;
+	padding-right: 35px;
+}
+
+/* Panneau du chat */
+#private_chat_contener {
+	/*border: 1px #C0C0C0 solid;*/
+	position: fixed;
+	bottom: 0px;
+	width: auto;
+	text-align: right;
+	right: 0px;
+	z-index: 3;
+}
+
+/* Panneau d'information du chat */
+.panneau_fonctions_private_chat {
+	height: 100%;
+	border: 1px solid #808080;
+	width: 22px;
+	padding: 2px;
+	vertical-align: middle;
+	background-color: rgba(218, 225, 240, 1);
+}
+
+/* Conteneur des conversations */
+#conversations_private_chat {
+	position: fixed;
+	right: 22px;
+	bottom: 0px;
+	padding-right: 2px;
+}
+
+#conversations_private_chat .content {
+	height: 94%; !important
+}
+
+/* Information sur chacun des chat */
+.une_conversation_private_chat {
+	height: inherit;
+	float: left;
+	background-color: #FFFFFF;
+	margin-left: 5px;
+}
+
+/* En-tête */
+.header_une_conversation_private_chat {
+	text-align: center;
+	height: 10%
+}
+
+/* Iframe */
+.iframe_une_conversation_private_chat {
+	height: 90%;
+	border: none;
+}
+
+/* Panneau de découverte du chat privé */
+#discover_private_chat {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	background-color: #C0C0C0;
+	visibility: hidden;
+}
+
+#discover_private_chat .close_discover_private_chat {
+	margin: auto;
+	width: 61px;
+}
+
+/* Responsive */
+@media screen and (max-width: 512px) {
+	#private_chat_open_button, .panneau_fonctions_private_chat{
+		display: none !important;
+	}
+	
+	#conversations_private_chat {
+		right: 0px !important;
+	}
+	
+	.une_conversation_private_chat {
+		max-width: 100% !important;
+	}
+}

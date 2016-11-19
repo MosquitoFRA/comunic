@@ -1,0 +1,50 @@
+/*Service Pierre, 2013-2015 */
+/* Tous droits réservés ---*/
+/*--------CHAT-(prive)----*/
+.textcenter {
+	text-align: center;
+}
+#contentpost {
+	margin: auto;
+	text-align: center;
+	padding: 5px;
+}
+#privatechatform {
+	position: absolute;
+	top: 0em;
+	width: 100%;
+	opacity:1.0;
+	/*background-color: grey;*/
+	left: 0px;
+	text-align: center;
+	/*scroll: auto;*/
+}
+
+.form_send_message {
+	text-align: center;
+	padding-top: 1px;
+	margin-bottom: -12px;
+}
+
+#message {
+	width: 65%;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.private_chat_post{
+
+}
+
+.metro .notice {
+	margin: 0px 0px 1px !important;
+	padding: 2px !important;
+}
+
+/*.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}*/

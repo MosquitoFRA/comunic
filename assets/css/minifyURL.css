@@ -1,0 +1,33 @@
+/* Script d'information redirection Comunic */
+body {
+	background-color: rgba(128, 128, 128, 0.28);
+}
+
+.corps_redirection {
+	width: 500px;
+	margin: auto;
+	background-color: white;
+	padding: 50px;
+	margin-top: 30px;
+	font-family: arial;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.corps_redirection .button, .corps_redirection .button:visited {
+	text-decoration: none;
+	border: 1px grey solid;
+	padding: 10px;
+	margin-right: 5px;
+	border-radius: 2px;
+	color: blue;
+}
+
+.corps_redirection .button:hover{
+	background-color: rgba(0, 0, 0, 0.19);
+}
+
+.corps_redirection .button:active{
+	background-color: rgba(0, 0, 0, 0.60);
+	color: #FFFFFF;
+}

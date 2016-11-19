@@ -1,0 +1,17 @@
+/* Fichier d'avertissement d'éventuels problèmes dûes à une mise à jour
+ (c) Comunic		2013 - 2015  									    */
+#alert_last_update {
+	height: 320px;
+	background-color: #C0C0C0;
+	width: 500px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+	z-index: 4;
+}
+
+#alert_last_update .close {
+	margin: auto;
+	width: 61px;
+}

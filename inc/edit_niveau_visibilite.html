@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Edition du niveau de visibilit&eacute; d'un texte</title>
+	</head>
+	<body>
+		<form action="../action.php?actionid=14" method="get">
+			<table border='1' align='center'>
+				<tr>
+					<td> Nouveau niveau de visibilit&eacute; </td>
+					<td> 
+						<input name="nouveau_niveau_visibilite" value="3" type="radio"> Moi uniquement 
+						<input name="nouveau_niveau_visibilite" value="2" checked="" type="radio"> Moi et mes amis 
+						<input name="nouveau_niveau_visibilite" value="1" type="radio"> Tout le monde
+					</td>
+				</tr>
+				<tr>
+					<td> ID du texte </td>
+					<td> <input type="text" name="idtexte" /> </td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center"> <input type="submit" value="Modifier" /> </td>
+			</table>
+		</form>
+	</body>
+</html>

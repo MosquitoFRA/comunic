@@ -1,0 +1,127 @@
+/* Feuille de style de la version mobile de Comunic */
+/*-------------------- 2013, 2014 ----------------- */
+
+/*--------------- En-tête de la page ---------------*/
+#header{
+	border:1px solid #333;
+	background:#111;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-shadow:0 -1px 0 #000;
+	background-image:-webkit-gradient(linear,left top,left bottom,from( #3c3c3c ),to( #111 ));
+	background-image:-webkit-linear-gradient( #3c3c3c,#111 );
+	background-image:-moz-linear-gradient( #3c3c3c,#111 );
+	background-image:-ms-linear-gradient( #3c3c3c,#111 );
+	background-image:-o-linear-gradient( #3c3c3c,#111 );
+	background-image:linear-gradient( #3c3c3c,#111 );
+	padding: -10px;
+    margin: -10px;
+	position: relative;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+#titreheader{
+	margin:.5em 20px .8em;
+	font-size:20px;
+	text-align:left;
+	color: #FFFFFF;
+}
+#nomuser {
+float: right;
+color: #FFFFFF;
+height: 100%;
+}
+
+/*------------------- Général ----------------------*/
+body {background: none repeat scroll 0% 0% rgb(221, 221, 221); font-family: Helvetica,Arial,sans-serif; text-align: center;}
+a {text-decoration: none; height: 100%; }
+
+/*------------------- Boutons ----------------------*/
+.bouton {
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	margin: 0.5em 0px;
+	padding: 0px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+	background-clip: padding-box;
+	border-radius: 1em 1em 1em 1em;
+	font-family: Helvetica,Arial,sans-serif;
+	text-decoration: none;
+	border: 1px solid rgb(204, 204, 204);
+	background: linear-gradient(rgb(255, 255, 255), rgb(241, 241, 241)) repeat scroll 0% 0% rgb(238, 238, 238);
+	font-weight: bold;
+	color: rgb(34, 34, 34);
+	text-shadow: 0px 1px 0px rgb(255, 255, 255);
+	height: 50px;
+}
+
+.inputbouton {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: medium none;
+	font-weight: bold;
+	cursor: pointer;
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0);
+}
+
+.bouton:hover {
+	border:1px solid #000;
+	background:#444;
+	font-weight:bold;
+	color:#fff;
+	text-shadow:0 1px 0 #111;
+	background-image:-webkit-gradient(linear,left top,left bottom,from( #555 ),to( #383838 ));
+	background-image:-webkit-linear-gradient( #555,#383838 );
+	background-image:-moz-linear-gradient( #555,#383838 );
+	background-image:-ms-linear-gradient( #555,#383838 );
+	background-image:-o-linear-gradient( #555,#383838 );
+	background-image:linear-gradient( #555,#383838 )
+}
+
+/*----------------- Champs de texte ----------------*/
+.text {
+	margin: 0.5em 0px;
+    background-image: none;
+    position: relative;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) inset;
+	border-radius: 0.6em 0.6em 0.6em 0.6em;
+	border: 1px solid rgb(170, 170, 170);
+	color: rgb(51, 51, 51);
+	text-shadow: 0px 1px 0px rgb(255, 255, 255);
+	background: linear-gradient(rgb(249, 249, 249), rgb(238, 238, 238)) repeat scroll 0% 0% rgb(249, 249, 249);
+	font-size: 16px;
+	font-size: 16px;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+/*----------------- Page des utilisateurs ----------*/
+.entetepage {
+	text-align: left;
+}
+
+#conteneurtextes {
+}
+
+.dateenvoitexte {
+color: grey;
+}
+
+.aime {
+}
+
+.texte {
+}
+
+#ajouttexte {
+}
+
+.texteenvaleur {
+background-color: #A2A2A2;
+border-radius: 1px;
+}

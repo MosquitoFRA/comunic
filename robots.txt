@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /3rdparty/
+Disallow: /assets/
+Disallow: /admin/

@@ -1,0 +1,40 @@
+<?php
+	//Vérifications de dernières minute
+	if(!isset($infosURL['uri_base']))
+		$infosURL['uri_base'] = $urlsite;
+	
+	if(!isset($infosURL['url_saisie']))
+		$infosURL['url_saisie'] = $_SERVER['PHP_SELF'];
+?><!DOCTYPE html>
+<html>
+	<head>
+		<title>Erreur 404 : page non trouv&eacute;e - Comunic</title>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+		<style type='text/css'>
+			body {margin:0px;padding:0px;background:#ffffff;font-family:arial, helvetica, sans-serif;} 
+			#top {margin:0px;padding:0px;background:#0066CC; color: #FFFFFF; width:100%; } 
+			#top .container { padding:0px 0px 0px 0px; height: 23px; }
+			#top .container a {color: white; text-decoration: none; }
+			.titre { text-align: center; }
+		</style>
+	</head>
+	<body>
+		<div id='top'> 
+			<div class='container'>
+			<strong><a href='<?php echo $infosURL['uri_base']; ?>'>Comunic</a></strong>
+			</div>
+		</div>
+		
+		<h1 class='titre'>Erreur : La page demand&eacute;e n'a pas &eacute;t&eacute; trouv&eacute;e</h1>
+		<p>L'adresse saisie <i><?php echo $infosURL['url_saisie']; ?></i> n'a pas &eacute;t&eacute; trouv&eacute;e.</p>
+		<p>Causes les plus probables:</p>
+		<ul>
+			<li>La page a &eacute;t&eacute; d&eacute;plac&eacute;e</li>
+			<li>La page a &eacute;t&eacute; supprim&eacute;e</li>
+			<li>Vous ne disposez pas des autorisations n&eacute;cessaires pour ouvrir la page.</li>
+		</ul>
+		<p>Si vous avez &eacute;crit l'URL &agrave; la main, v&eacute;rifiez votre saisie. Sinon, retournez &agrave; la page pr&eacute;c&eacute;dente et actualisez-la. Si le probl&egrave;me persiste, contactez-nous. Si vous le souhaitez, vous pouvez &eacute;galement <a href="<?php echo $infosURL['uri_base']; ?>">retourner &agrave; l'acceuil.</a></p>
+		<p><span style="text-decoration: underline;"><strong>Que signifie "Erreur 404" ?</strong></span></p>
+		<p>Dans le web, lorsqu'une page demand&eacute;e n'a pas &eacute;t&eacute; trouv&eacute;e sur un serveur, ce dernier renvoi une erreur de type 404. <em>404</em> est un <strong>&eacute;tat</strong>: l'&eacute;tat de la requ&ecirc;te envoy&eacute;e. Il existe d'autre &eacute;tat qui permette de d&eacute;finir si l'acc&egrave;s &agrave; une page est autoris&eacute; ou interdit, si tout s'est bien pass&eacute;...</p>
+	</body>
+</html>

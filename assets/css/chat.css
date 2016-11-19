@@ -1,0 +1,52 @@
+/*Service Pierre, 2011-2013 */
+/* Tous droits réservés ---*/
+/*--------CHAT------------*/
+.boutonchat {
+float: right;
+position: fixed;
+bottom: 0em;
+width: 22.5em;
+right: 0em;
+text-align: center;
+margin: 0em;
+padding: 0em;
+opacity:1.0;
+border: 1px solid black;
+background-color: #051ba0;
+color: #FFFFFF;
+}
+.chat {
+float: right;
+position: fixed;
+bottom: 1.2em;
+opacity:1.0;
+width: 22.5em;
+right: 0em;
+text-align: center;
+margin: 0em;
+padding: 0em;
+border: 1px solid black;
+height: 400px;
+background-color: #FFFFFF;
+}
+#formulairechat {
+position: fixed;
+bottom: 1.25em;
+width: 22.5em;
+height: 65px;
+opacity:1.0;
+background-color: grey;
+}
+#message {
+width: 22.4em;
+opacity:1.0;
+}
+#affichercontenuchat {
+overflow: auto;
+height: 335px;
+opacity:1.0;
+}
+#afficherchat {
+width: 22.4em;
+opacity:1.0;
+}
